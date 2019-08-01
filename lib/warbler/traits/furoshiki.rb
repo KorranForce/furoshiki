@@ -18,8 +18,8 @@ module Warbler
         true
       end
 
-      def self.requires?(trait)
-        [Traits::Jar].include? trait
+      def self.requirements
+        [Traits::Jar]
       end
 
       def update_archive(jar)
